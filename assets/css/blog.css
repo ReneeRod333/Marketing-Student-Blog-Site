@@ -1,0 +1,54 @@
+/* General Styling */
+* {
+    font-family: 'Julius Sans One', Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(193, 192, 190) ;
+}
+
+/* Header */
+header {
+    color: white;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-button {
+    background-color: rgb(60, 59, 59);
+    color: white;
+    font-size: 18px;
+    height: 40px;
+    margin-top: 22px;
+}
+
+.theme-toggle {
+
+}
+
+main article {
+    color: rgb(60, 59, 59);
+    border: solid 2px rgb(243, 240, 240);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 0 10px 10px 10px;
+    background-color: rgb(243, 240, 240);
+}
+
+main article h3 {
+    color: rgb(205, 43, 226);
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+main article p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-style: italic;
+}
+
+footer ul li {
+    color: rgb(60, 59, 59);
+    list-style-type: none;
+}
