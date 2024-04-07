@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Marketing Journey</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
@@ -37,13 +38,24 @@
                 <input type="text" id="title" name="title" placeholder="Enter Title" />
                 <label for="content">Content:</label>
                 <textarea id="content" name="content" rows="5" cols="50" placeholder="Enter Content"></textarea>
-                <input type="submit" value="Submit" />
+                <div id="msg"></div>
+                <button id="submit">Submit</button>
             </form>
+
+            
+
+        </div>
+
+        <div class="card">
+            <h2>Last Registered User:</h2>
+            <p><strong>Username:</strong> <span id="user-name"></span></p>
+            <p><strong>Title:</strong> <span id="user-title"></span></p>
+            <p><strong>Content:</strong> <span id="blog-content"></span></p>
         </div>
 
     </main>
-<script src="../assets/js/form.js"></script>
-<script src="../assets/js/logic.js"></script>
+    <script src="../assets/js/form.js"></script>
+<!-- <script src="../assets/js/logic.js"></script> -->
 </body>
 
 </html>
