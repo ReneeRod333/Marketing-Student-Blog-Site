@@ -1,0 +1,165 @@
+/* General Styling */
+* {
+  font-family: 'Julius Sans One', Verdana, sans-serif;
+}
+
+/* Header */
+header {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header div {
+  align-items: center;
+  text-align: center;
+}
+
+.back-button {
+  font-size: 18px;
+  height: 40px;
+  margin-top: 22px;
+  border-radius: 20px;
+}
+
+/* Main */
+main article {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 0 10px 10px 10px;
+}
+
+main article h3 {
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+main article p {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-style: italic;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 2px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border: solid 1px rgb(205, 43, 226);
+}
+
+.slider:before {
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 2px;
+  background-color: rgb(205, 43, 226);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+input:checked+.slider {
+  background-color: rgb(243, 240, 240);
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Footer */
+footer ul li {
+
+  list-style-type: none;
+}
+
+/* Dark Mode */
+.dark .slider:before {
+  content: "🌙";
+}
+
+.dark {
+  background-color: rgb(24, 23, 23);
+  color: rgb(29, 27, 27);
+}
+
+.dark .back-button {
+  background-color: rgb(243, 240, 240);
+  color: rgb(60, 59, 59);
+}
+
+.dark header {
+  color: rgb(205, 43, 226);
+}
+
+.dark main article {
+  background-color: rgb(193, 192, 190);
+  border: solid 1px rgb(205, 43, 226);
+}
+
+.dark main article h3 {
+  color: white;
+}
+
+.dark footer {
+  color: rgb(205, 43, 226);
+}
+
+/* Light Mode */
+.light .slider:before {
+  content: "☀️";
+}
+
+.light {
+  background-color: rgb(193, 192, 190);
+}
+
+.light .back-button {
+  background-color: rgb(60, 59, 59);
+  color: white;
+}
+
+.light header {
+  color: white;
+}
+
+.light main article {
+  background-color: rgb(243, 240, 240);
+  border: solid 1px rgb(243, 240, 240);
+}
+
+.light main article h3 {
+  color: rgb(205, 43, 226);
+}
+
+.light footer {
+  color: rgb(60, 59, 59);
+}
