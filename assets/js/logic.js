@@ -1,4 +1,4 @@
-// Header
+// Theme Switcher
 const themeSwitcher = document.querySelector('#theme-switcher');
 const container = document.querySelector('.container');
 

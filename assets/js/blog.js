@@ -1,5 +1,3 @@
-
-
 const mainEL = document.querySelector('#main');
 function renderLastRegistered() {
 
@@ -7,6 +5,7 @@ function renderLastRegistered() {
     if (localStorage.getItem('blogs')) {
         blogs = JSON.parse(localStorage.getItem('blogs'))
     }
+    
     console.log(blogs.length)
 
     for (const blog of blogs) {

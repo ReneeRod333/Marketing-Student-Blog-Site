@@ -36,5 +36,9 @@ submitButton.addEventListener('click', function (event) {
     const bloginfo = { username, title, content };
     blogs.push(bloginfo);
     localStorage.setItem('blogs', JSON.stringify(blogs));
+    usernameInput.value = '';
+    titleInput.value = '';
+    contentInput.value = '';
+    window.location.href = '../../blog.html';
   }
 });
