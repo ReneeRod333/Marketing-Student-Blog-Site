@@ -39,6 +39,6 @@ submitButton.addEventListener('click', function (event) {
     usernameInput.value = '';
     titleInput.value = '';
     contentInput.value = '';
-    window.location.href = '../../blog.html';
+    window.location.href = '/blog.html';
   }
 });
